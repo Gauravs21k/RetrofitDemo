@@ -7,5 +7,5 @@ import retrofit2.http.Query
 interface TodoApi {
 
     @GET("/todos")
-    suspend fun getTodos(@Query("") key: String): Response<List<Todo>>
+    suspend fun getTodos(): Response<List<Todo>>
 }
